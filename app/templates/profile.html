@@ -1,0 +1,32 @@
+{% extends 'base.html' %} 
+
+{% block main %}
+        <body>
+            <div id="card">
+                <div id="upper">
+                    <br>
+                    <img id="dp" src="{{ url_for('static', filename='dmullings.jpg') }}" alt="Danielle Mullings" width="500" height="600">
+                    <h1 id="fullname">Danielle Mullings</h1>
+                    <p id="username" class="nobottom">@damullings</p>
+                    <p id="location"  class="nobottom">Kingston, Jamaica</p>
+                    <p id="datejoined"  class="nobottom">{{ date }}</p>
+                    <br>
+                </div>
+                <div id="lower">
+                    <p id="bio">Danielle Mullings is a Jamaican software engineering student who makes cultural documentaries. She currently serves as the president of the Faculty of Science and Technology Guild Committee, University of the West Indies Mona.</p>
+                    
+                    <div id="stats">
+                        <h2 id="posts">5</h2>
+                        <p>Posts</p>
+                        <h2 id="followers">20</h2>
+                        <p>Followers</p>
+                        <h2 id="following">14</h2>
+                        <p>Following</p>
+                        <br>
+                    </div>
+                    
+                    <button>Follow</button>
+                </div>
+            </div>
+        </body>
+{% endblock %}
